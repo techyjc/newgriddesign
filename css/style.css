@@ -1,0 +1,141 @@
+:root {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  
+  .main-header {
+    background-color: chocolate;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: clamp(1rem, 3vw, 2rem);
+    height: calc(120px - 2rem);
+    padding: 1rem;
+    position: sticky;
+    top: 0px;
+  }
+  
+  .main-heading {
+    margin: 0px;
+  }
+  
+  main {
+    font-family: "Roboto", sans-serif;
+    padding: 1rem;
+  }
+  
+  .wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .grid-wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(calc(230px + 6rem), 100%), 1fr)
+    );
+    align-items: flex-start;
+    margin-inline: auto;
+    max-width: calc(100% - 330px);
+    min-height: fit-content;
+    min-height: calc(100vh - 2rem);
+  }
+  
+  .griditems {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px grey;
+    padding: 1rem;
+    min-width: 265px;
+  }
+  
+  .griditem-1 {
+    background-color: hsl(197, 71%, 63%);
+  }
+  
+  .griditem-2 {
+    background-color: hsl(300, 24%, 60%);
+  }
+  
+  .griditem-3 {
+    background-color: hsl(34, 57%, 60%);
+  }
+  
+  .griditem-4 {
+    background-color: salmon;
+  }
+  
+  .griditem-5 {
+    background-color: darkolivegreen;
+  }
+  
+  .card-header {
+    display: flex;
+    align-content: center;
+  }
+  
+  .avatar {
+    width: 45px;
+  }
+  
+  .heading {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-block: 0px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .body-text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  
+  .sidebar {
+    display: block;
+    position: sticky;
+    width: 300px;
+  }
+
+  .sidenote {
+    background-color: rgb(245, 245, 245);
+    padding: 1rem;
+    position: sticky;
+    top: calc(120px + 1rem);
+  }
+  
+  .main-footer {
+    background-color: chocolate;
+    bottom: 0px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-inline: 1rem;
+    position: sticky;
+  }
+  
+  .colophon-text {
+    font-size: 0.8rem;
+  }
+  
+  @media screen and (max-width: 760px) {
+    .grid-wrapper {
+      max-width: 100%;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  }
+  
